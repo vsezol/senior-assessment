@@ -1,30 +1,15 @@
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
+const express = require("express");
 const router = express.Router();
-const DATA_PATH = path.join(__dirname, '../../../data/items.json');
+const statsService = require("../services/StatsService");
 
-// GET /api/stats
-router.get('/', (req, res, next) => {
-  fs.readFile(DATA_PATH, (err, raw) => {
-    if (err) {
-      console.error('Error reading items file:', err);
-      return next(err);
-    }
-
-    try {
-      const items = JSON.parse(raw);
-      const stats = {
-        total: items.length,
-        averagePrice: items.reduce((acc, cur) => acc + cur.price, 0) / items.length
-      };
-
-      res.json(stats);
-    } catch (parseErr) {
-      console.error('Error parsing JSON:', parseErr);
-      return next(parseErr);
-    }
-  });
+router.get("/", async (req, res, next) => {
+  try {
+    const stats = await statsService.getOverallStats();
+    res.json(stats);
+  } catch (err) {
+    console.error("Error getting stats:", err);
+    next(err);
+  }
 });
 
 module.exports = router;
