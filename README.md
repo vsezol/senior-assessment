@@ -1,55 +1,72 @@
-# Product Catalog with Virtual Scrolling
+# Take‑Home Assessment
 
-Система каталога продуктов с виртуальным списком и инфинитным скроллом.
+## DEMO VIDEO
 
-## Особенности
+[Watch Demo Video](./demo.mov)
 
-- **Виртуальный список**: Отображение только видимых элементов для оптимальной производительности
-- **Инфинитный скролл**: Автоматическая догрузка данных при скролле
-- **React Query**: Оптимальное кеширование и управление состоянием данных
-- **Daisy UI**: Современный дизайн с поддержкой тем
-- **Скелетоны**: Плавная загрузка с анимированными заглушками
-- **Аккордеон**: Раскрывающиеся карточки товаров
-- **Поиск**: Серверный поиск с дебаунсом
-- **Статистика**: Отображение общей статистики через API
+[Link to Google Disk Demo Video](https://drive.google.com/file/d/1OU4Fhh4XWdnsug6zUWeFsMGgPYFlD3r1/view?usp=drive_link)
 
-## Установка
+Welcome, candidate! This project contains **intentional issues** that mimic realâ€‘world scenarios.
+Your task is to refactor, optimize, and fix these problems.
 
-### Backend
+## Objectives
+
+### ðŸ’» Frontend (React)
+
+1. **Memory Leak**
+
+   - `Items.js` leaks memory if the component unmounts before fetch completes. Fix it.
+
+2. **Pagination & Search**
+
+   - Implement paginated list with serverâ€‘side search (`q` param). Contribute to both client and server.
+
+3. **Performance**
+
+   - The list can grow large. Integrate **virtualization** (e.g., `react-window`) to keep UI smooth.
+
+4. **UI/UX Polish(optional)**
+   - Feel free to enhance styling, accessibility, and add loading/skeleton states.
+
+### ðŸ”§ Backend (Node.js)
+
+1. **Refactor blocking I/O**
+
+   - `src/routes/items.js` uses `fs.readFileSync`. Replace with nonâ€‘blocking async operations.
+
+2. **Performance**
+   - `GET /api/stats` recalculates stats on every request. Cache results, watch file changes, or introduce a smarter strategy.
+
+## â° Time Expectation
+
+- Estimated time to complete: **1â€“2 hours**.
+
+## ðŸ“¤ Submission
+
+Once completed, submit one of the following:
+
+- **short video** recording your work.
+- **Github Link** where your assessment result were pushed.
+
+---
+
+## Quick Start
+
+node version: 18.XX
 
 ```bash
+nvm install 18
+nvm use 18
+
+# Terminal 1
 cd backend
 npm install
-npm run dev
-```
+npm start
 
-### Frontend
-
-```bash
+# Terminal 2
 cd frontend
 npm install
 npm start
 ```
 
-## Технологии
-
-### Backend
-- Node.js
-- Express.js
-- JSON файловая база данных
-
-### Frontend
-- React 18
-- React Query (TanStack Query)
-- React Window (виртуализация)
-- Daisy UI + Tailwind CSS
-- React Router DOM
-
-## API Endpoints
-
-- `GET /api/items` - Получение списка товаров с пагинацией и поиском
-- `GET /api/items/:id` - Получение конкретного товара
-- `GET /api/stats` - Получение статистики
-- `POST /api/items` - Создание нового товара
-
-## Структура проекта
+> The frontend proxies `/api` requests to `http://localhost:4001`.
