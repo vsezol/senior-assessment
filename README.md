@@ -11,7 +11,7 @@ Your task is to refactor, optimize, and fix these problems.
 
 ## Objectives
 
-### ðŸ’» Frontend (React)
+### Frontend (React)
 
 1. **Memory Leak**
 
@@ -28,7 +28,7 @@ Your task is to refactor, optimize, and fix these problems.
 4. **UI/UX Polish(optional)**
    - Feel free to enhance styling, accessibility, and add loading/skeleton states.
 
-### ðŸ”§ Backend (Node.js)
+### Backend (Node.js)
 
 1. **Refactor blocking I/O**
 
@@ -37,11 +37,11 @@ Your task is to refactor, optimize, and fix these problems.
 2. **Performance**
    - `GET /api/stats` recalculates stats on every request. Cache results, watch file changes, or introduce a smarter strategy.
 
-## â° Time Expectation
+## Time Expectation
 
 - Estimated time to complete: **1â€“2 hours**.
 
-## ðŸ“¤ Submission
+## Submission
 
 Once completed, submit one of the following:
 
