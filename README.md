@@ -1,10 +1,10 @@
-# Take‑Home Assessment
-
-## DEMO VIDEO
+# Result Video
 
 [Watch Demo Video](./demo.mov)
 
 [Link to Google Disk Demo Video](https://drive.google.com/file/d/1OU4Fhh4XWdnsug6zUWeFsMGgPYFlD3r1/view?usp=drive_link)
+
+# Take‑Home Assessment
 
 Welcome, candidate! This project contains **intentional issues** that mimic realâ€‘world scenarios.
 Your task is to refactor, optimize, and fix these problems.
