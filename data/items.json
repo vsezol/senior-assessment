@@ -1,7 +1,802 @@
 [
-  { "id": 1, "name": "Laptop Pro", "category": "Electronics", "price": 2499 },
-  { "id": 2, "name": "Noise Cancelling Headphones", "category": "Electronics", "price": 399 },
-  { "id": 3, "name": "Ultra‑Wide Monitor", "category": "Electronics", "price": 999 },
-  { "id": 4, "name": "Ergonomic Chair", "category": "Furniture", "price": 799 },
-  { "id": 5, "name": "Standing Desk", "category": "Furniture", "price": 1199 }
+  {
+    "id": 1,
+    "name": "Laptop Pro",
+    "category": "Electronics",
+    "price": 2499,
+    "description": "High-performance laptop with advanced features",
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Noise Cancelling Headphones",
+    "category": "Electronics",
+    "price": 399,
+    "description": "Premium audio experience with active noise cancellation",
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name": "Ultra‑Wide Monitor",
+    "category": "Electronics",
+    "price": 999,
+    "description": "34-inch curved display for productivity",
+    "inStock": false
+  },
+  {
+    "id": 4,
+    "name": "Ergonomic Chair",
+    "category": "Furniture",
+    "price": 799,
+    "description": "Comfortable office chair with lumbar support",
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "name": "Standing Desk",
+    "category": "Furniture",
+    "price": 1199,
+    "description": "Height-adjustable desk for better health",
+    "inStock": true
+  },
+  {
+    "id": 6,
+    "name": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 79,
+    "description": "Precision wireless mouse with long battery life",
+    "inStock": true
+  },
+  {
+    "id": 7,
+    "name": "Mechanical Keyboard",
+    "category": "Electronics",
+    "price": 149,
+    "description": "Tactile mechanical switches for typing comfort",
+    "inStock": true
+  },
+  {
+    "id": 8,
+    "name": "Office Lamp",
+    "category": "Furniture",
+    "price": 89,
+    "description": "LED desk lamp with adjustable brightness",
+    "inStock": true
+  },
+  {
+    "id": 9,
+    "name": "Webcam HD",
+    "category": "Electronics",
+    "price": 199,
+    "description": "1080p webcam for video conferencing",
+    "inStock": false
+  },
+  {
+    "id": 10,
+    "name": "Desk Organizer",
+    "category": "Furniture",
+    "price": 45,
+    "description": "Keep your workspace tidy and organized",
+    "inStock": true
+  },
+  {
+    "id": 11,
+    "name": "Bluetooth Speaker",
+    "category": "Electronics",
+    "price": 129,
+    "description": "Portable speaker with rich sound quality",
+    "inStock": true
+  },
+  {
+    "id": 12,
+    "name": "Monitor Stand",
+    "category": "Furniture",
+    "price": 65,
+    "description": "Adjustable monitor stand with storage",
+    "inStock": true
+  },
+  {
+    "id": 13,
+    "name": "USB Hub",
+    "category": "Electronics",
+    "price": 39,
+    "description": "7-port USB hub for connectivity",
+    "inStock": true
+  },
+  {
+    "id": 14,
+    "name": "Bookshelf",
+    "category": "Furniture",
+    "price": 299,
+    "description": "5-tier wooden bookshelf for storage",
+    "inStock": false
+  },
+  {
+    "id": 15,
+    "name": "Tablet Pro",
+    "category": "Electronics",
+    "price": 899,
+    "description": "Professional tablet with stylus support",
+    "inStock": true
+  },
+  {
+    "id": 16,
+    "name": "Filing Cabinet",
+    "category": "Furniture",
+    "price": 249,
+    "description": "3-drawer filing cabinet for documents",
+    "inStock": true
+  },
+  {
+    "id": 17,
+    "name": "Wireless Charger",
+    "category": "Electronics",
+    "price": 49,
+    "description": "Fast wireless charging pad",
+    "inStock": true
+  },
+  {
+    "id": 18,
+    "name": "Desk Pad",
+    "category": "Office Supplies",
+    "price": 25,
+    "description": "Large desk pad for mouse and keyboard",
+    "inStock": true
+  },
+  {
+    "id": 19,
+    "name": "Coffee Maker",
+    "category": "Appliances",
+    "price": 179,
+    "description": "Programmable coffee maker with timer",
+    "inStock": true
+  },
+  {
+    "id": 20,
+    "name": "Plant Pot",
+    "category": "Decor",
+    "price": 19,
+    "description": "Ceramic plant pot for office greenery",
+    "inStock": true
+  },
+  {
+    "id": 21,
+    "name": "Gaming Mouse",
+    "category": "Electronics",
+    "price": 99,
+    "description": "High-DPI gaming mouse with RGB lighting",
+    "inStock": true
+  },
+  {
+    "id": 22,
+    "name": "Footrest",
+    "category": "Furniture",
+    "price": 79,
+    "description": "Adjustable footrest for comfort",
+    "inStock": false
+  },
+  {
+    "id": 23,
+    "name": "Cable Management",
+    "category": "Office Supplies",
+    "price": 15,
+    "description": "Cable clips and organizers",
+    "inStock": true
+  },
+  {
+    "id": 24,
+    "name": "Printer",
+    "category": "Electronics",
+    "price": 249,
+    "description": "All-in-one wireless printer",
+    "inStock": true
+  },
+  {
+    "id": 25,
+    "name": "Wall Clock",
+    "category": "Decor",
+    "price": 35,
+    "description": "Modern wall clock for office",
+    "inStock": true
+  },
+  {
+    "id": 26,
+    "name": "Smartphone Pro",
+    "category": "Electronics",
+    "price": 1299,
+    "description": "Latest smartphone with advanced camera",
+    "inStock": true
+  },
+  {
+    "id": 27,
+    "name": "Wireless Earbuds",
+    "category": "Electronics",
+    "price": 199,
+    "description": "True wireless earbuds with noise cancellation",
+    "inStock": true
+  },
+  {
+    "id": 28,
+    "name": "Smart Watch",
+    "category": "Electronics",
+    "price": 399,
+    "description": "Fitness tracking smartwatch",
+    "inStock": false
+  },
+  {
+    "id": 29,
+    "name": "External SSD",
+    "category": "Electronics",
+    "price": 159,
+    "description": "1TB portable SSD for storage",
+    "inStock": true
+  },
+  {
+    "id": 30,
+    "name": "Graphics Card",
+    "category": "Electronics",
+    "price": 699,
+    "description": "High-performance graphics card",
+    "inStock": false
+  },
+  {
+    "id": 31,
+    "name": "Office Chair Mat",
+    "category": "Furniture",
+    "price": 89,
+    "description": "Protective mat for office chairs",
+    "inStock": true
+  },
+  {
+    "id": 32,
+    "name": "Desk Shelf",
+    "category": "Furniture",
+    "price": 129,
+    "description": "Floating desk shelf for storage",
+    "inStock": true
+  },
+  {
+    "id": 33,
+    "name": "Power Bank",
+    "category": "Electronics",
+    "price": 59,
+    "description": "20000mAh portable power bank",
+    "inStock": true
+  },
+  {
+    "id": 34,
+    "name": "Notebook Set",
+    "category": "Office Supplies",
+    "price": 29,
+    "description": "Set of premium notebooks",
+    "inStock": true
+  },
+  {
+    "id": 35,
+    "name": "Pen Holder",
+    "category": "Office Supplies",
+    "price": 19,
+    "description": "Wooden pen and pencil holder",
+    "inStock": true
+  },
+  {
+    "id": 36,
+    "name": "Air Purifier",
+    "category": "Appliances",
+    "price": 299,
+    "description": "HEPA air purifier for clean air",
+    "inStock": false
+  },
+  {
+    "id": 37,
+    "name": "Desk Fan",
+    "category": "Appliances",
+    "price": 49,
+    "description": "Quiet desktop fan for cooling",
+    "inStock": true
+  },
+  {
+    "id": 38,
+    "name": "Monitor Light",
+    "category": "Electronics",
+    "price": 79,
+    "description": "Screen light bar to reduce eye strain",
+    "inStock": true
+  },
+  {
+    "id": 39,
+    "name": "Document Holder",
+    "category": "Office Supplies",
+    "price": 35,
+    "description": "Adjustable document holder",
+    "inStock": true
+  },
+  {
+    "id": 40,
+    "name": "Whiteboard",
+    "category": "Office Supplies",
+    "price": 89,
+    "description": "Magnetic whiteboard for planning",
+    "inStock": true
+  },
+  {
+    "id": 41,
+    "name": "Router Pro",
+    "category": "Electronics",
+    "price": 299,
+    "description": "High-speed wireless router",
+    "inStock": true
+  },
+  {
+    "id": 42,
+    "name": "Webcam Stand",
+    "category": "Furniture",
+    "price": 39,
+    "description": "Adjustable webcam mounting stand",
+    "inStock": true
+  },
+  {
+    "id": 43,
+    "name": "Surge Protector",
+    "category": "Electronics",
+    "price": 45,
+    "description": "12-outlet surge protector",
+    "inStock": true
+  },
+  {
+    "id": 44,
+    "name": "Desk Calendar",
+    "category": "Office Supplies",
+    "price": 15,
+    "description": "Monthly desk calendar",
+    "inStock": true
+  },
+  {
+    "id": 45,
+    "name": "Task Light",
+    "category": "Furniture",
+    "price": 69,
+    "description": "Adjustable LED task lighting",
+    "inStock": false
+  },
+  {
+    "id": 46,
+    "name": "Storage Boxes",
+    "category": "Office Supplies",
+    "price": 39,
+    "description": "Set of storage boxes",
+    "inStock": true
+  },
+  {
+    "id": 47,
+    "name": "Microphone",
+    "category": "Electronics",
+    "price": 149,
+    "description": "USB condenser microphone",
+    "inStock": true
+  },
+  {
+    "id": 48,
+    "name": "Cable Tray",
+    "category": "Furniture",
+    "price": 55,
+    "description": "Under-desk cable management tray",
+    "inStock": true
+  },
+  {
+    "id": 49,
+    "name": "Sticky Notes",
+    "category": "Office Supplies",
+    "price": 12,
+    "description": "Colorful sticky note pads",
+    "inStock": true
+  },
+  {
+    "id": 50,
+    "name": "Desk Clock",
+    "category": "Decor",
+    "price": 29,
+    "description": "Digital desk clock with temperature",
+    "inStock": true
+  },
+  {
+    "id": 51,
+    "name": "Phone Stand",
+    "category": "Electronics",
+    "price": 25,
+    "description": "Adjustable phone stand",
+    "inStock": true
+  },
+  {
+    "id": 52,
+    "name": "Monitor Arm",
+    "category": "Furniture",
+    "price": 159,
+    "description": "Dual monitor mounting arm",
+    "inStock": false
+  },
+  {
+    "id": 53,
+    "name": "Wireless Keyboard",
+    "category": "Electronics",
+    "price": 89,
+    "description": "Compact wireless keyboard",
+    "inStock": true
+  },
+  {
+    "id": 54,
+    "name": "Desk Drawer",
+    "category": "Furniture",
+    "price": 99,
+    "description": "Under-desk drawer unit",
+    "inStock": true
+  },
+  {
+    "id": 55,
+    "name": "Label Maker",
+    "category": "Office Supplies",
+    "price": 79,
+    "description": "Electronic label maker",
+    "inStock": true
+  },
+  {
+    "id": 56,
+    "name": "Humidifier",
+    "category": "Appliances",
+    "price": 69,
+    "description": "Desktop ultrasonic humidifier",
+    "inStock": true
+  },
+  {
+    "id": 57,
+    "name": "Paper Shredder",
+    "category": "Office Supplies",
+    "price": 129,
+    "description": "Cross-cut paper shredder",
+    "inStock": false
+  },
+  {
+    "id": 58,
+    "name": "Desk Blotter",
+    "category": "Office Supplies",
+    "price": 35,
+    "description": "Leather desk blotter pad",
+    "inStock": true
+  },
+  {
+    "id": 59,
+    "name": "Wall Shelf",
+    "category": "Furniture",
+    "price": 79,
+    "description": "Floating wall shelf",
+    "inStock": true
+  },
+  {
+    "id": 60,
+    "name": "Bluetooth Adapter",
+    "category": "Electronics",
+    "price": 19,
+    "description": "USB Bluetooth adapter",
+    "inStock": true
+  },
+  {
+    "id": 61,
+    "name": "Desk Tidy",
+    "category": "Office Supplies",
+    "price": 45,
+    "description": "Multi-compartment desk organizer",
+    "inStock": true
+  },
+  {
+    "id": 62,
+    "name": "Monitor Filter",
+    "category": "Electronics",
+    "price": 89,
+    "description": "Privacy screen filter",
+    "inStock": false
+  },
+  {
+    "id": 63,
+    "name": "Cord Organizer",
+    "category": "Office Supplies",
+    "price": 25,
+    "description": "Spiral cable organizer",
+    "inStock": true
+  },
+  {
+    "id": 64,
+    "name": "Desk Mirror",
+    "category": "Decor",
+    "price": 39,
+    "description": "Adjustable desk mirror",
+    "inStock": true
+  },
+  {
+    "id": 65,
+    "name": "File Folders",
+    "category": "Office Supplies",
+    "price": 18,
+    "description": "Manila file folders pack",
+    "inStock": true
+  },
+  {
+    "id": 66,
+    "name": "Laptop Stand",
+    "category": "Furniture",
+    "price": 79,
+    "description": "Adjustable laptop stand",
+    "inStock": true
+  },
+  {
+    "id": 67,
+    "name": "Wireless Presenter",
+    "category": "Electronics",
+    "price": 49,
+    "description": "Wireless presentation remote",
+    "inStock": true
+  },
+  {
+    "id": 68,
+    "name": "Desk Lamp Clip",
+    "category": "Furniture",
+    "price": 35,
+    "description": "Clamp-on LED desk lamp",
+    "inStock": true
+  },
+  {
+    "id": 69,
+    "name": "Stapler",
+    "category": "Office Supplies",
+    "price": 22,
+    "description": "Heavy-duty stapler",
+    "inStock": true
+  },
+  {
+    "id": 70,
+    "name": "Hole Punch",
+    "category": "Office Supplies",
+    "price": 28,
+    "description": "3-hole paper punch",
+    "inStock": false
+  },
+  {
+    "id": 71,
+    "name": "Desk Phone",
+    "category": "Electronics",
+    "price": 99,
+    "description": "Corded desk phone",
+    "inStock": true
+  },
+  {
+    "id": 72,
+    "name": "Monitor Wipes",
+    "category": "Office Supplies",
+    "price": 15,
+    "description": "Screen cleaning wipes",
+    "inStock": true
+  },
+  {
+    "id": 73,
+    "name": "Wireless Mouse Pad",
+    "category": "Electronics",
+    "price": 59,
+    "description": "Wireless charging mouse pad",
+    "inStock": true
+  },
+  {
+    "id": 74,
+    "name": "Desk Accessories Set",
+    "category": "Office Supplies",
+    "price": 89,
+    "description": "Complete desk accessories set",
+    "inStock": true
+  },
+  {
+    "id": 75,
+    "name": "Cable Clips",
+    "category": "Office Supplies",
+    "price": 12,
+    "description": "Adhesive cable clips",
+    "inStock": true
+  },
+  {
+    "id": 76,
+    "name": "Desktop Organizer",
+    "category": "Furniture",
+    "price": 129,
+    "description": "Multi-tier desktop organizer",
+    "inStock": false
+  },
+  {
+    "id": 77,
+    "name": "Wireless Headset",
+    "category": "Electronics",
+    "price": 179,
+    "description": "Professional wireless headset",
+    "inStock": true
+  },
+  {
+    "id": 78,
+    "name": "Desk Partition",
+    "category": "Furniture",
+    "price": 199,
+    "description": "Desktop privacy partition",
+    "inStock": true
+  },
+  {
+    "id": 79,
+    "name": "Paper Clips",
+    "category": "Office Supplies",
+    "price": 8,
+    "description": "Assorted paper clips",
+    "inStock": true
+  },
+  {
+    "id": 80,
+    "name": "Rubber Stamps",
+    "category": "Office Supplies",
+    "price": 35,
+    "description": "Custom rubber stamps",
+    "inStock": true
+  },
+  {
+    "id": 81,
+    "name": "Desk Mat Large",
+    "category": "Office Supplies",
+    "price": 45,
+    "description": "Extra large desk mat",
+    "inStock": true
+  },
+  {
+    "id": 82,
+    "name": "Monitor Riser",
+    "category": "Furniture",
+    "price": 89,
+    "description": "Monitor riser with storage",
+    "inStock": true
+  },
+  {
+    "id": 83,
+    "name": "Wireless Trackball",
+    "category": "Electronics",
+    "price": 119,
+    "description": "Ergonomic wireless trackball",
+    "inStock": false
+  },
+  {
+    "id": 84,
+    "name": "Desk Caddy",
+    "category": "Office Supplies",
+    "price": 29,
+    "description": "Rotating desk caddy",
+    "inStock": true
+  },
+  {
+    "id": 85,
+    "name": "USB Extension",
+    "category": "Electronics",
+    "price": 19,
+    "description": "USB extension cable",
+    "inStock": true
+  },
+  {
+    "id": 86,
+    "name": "Memo Board",
+    "category": "Office Supplies",
+    "price": 39,
+    "description": "Cork memo board",
+    "inStock": true
+  },
+  {
+    "id": 87,
+    "name": "Desk Vacuum",
+    "category": "Appliances",
+    "price": 45,
+    "description": "Mini desk vacuum cleaner",
+    "inStock": true
+  },
+  {
+    "id": 88,
+    "name": "Wireless Gateway",
+    "category": "Electronics",
+    "price": 159,
+    "description": "Network gateway device",
+    "inStock": true
+  },
+  {
+    "id": 89,
+    "name": "Pencil Sharpener",
+    "category": "Office Supplies",
+    "price": 25,
+    "description": "Electric pencil sharpener",
+    "inStock": true
+  },
+  {
+    "id": 90,
+    "name": "Desk Hutch",
+    "category": "Furniture",
+    "price": 299,
+    "description": "Desktop hutch organizer",
+    "inStock": false
+  },
+  {
+    "id": 91,
+    "name": "Wireless Dock",
+    "category": "Electronics",
+    "price": 199,
+    "description": "Universal wireless docking station",
+    "inStock": true
+  },
+  {
+    "id": 92,
+    "name": "File Sorter",
+    "category": "Office Supplies",
+    "price": 35,
+    "description": "Vertical file sorter",
+    "inStock": true
+  },
+  {
+    "id": 93,
+    "name": "Desk Compass",
+    "category": "Office Supplies",
+    "price": 15,
+    "description": "Professional compass set",
+    "inStock": true
+  },
+  {
+    "id": 94,
+    "name": "Monitor Cleaner",
+    "category": "Office Supplies",
+    "price": 18,
+    "description": "Screen cleaning solution",
+    "inStock": true
+  },
+  {
+    "id": 95,
+    "name": "Wireless Hub",
+    "category": "Electronics",
+    "price": 89,
+    "description": "Multi-device wireless hub",
+    "inStock": true
+  },
+  {
+    "id": 96,
+    "name": "Desk Globe",
+    "category": "Decor",
+    "price": 79,
+    "description": "Decorative desk globe",
+    "inStock": false
+  },
+  {
+    "id": 97,
+    "name": "Cable Sleeve",
+    "category": "Office Supplies",
+    "price": 22,
+    "description": "Flexible cable sleeve",
+    "inStock": true
+  },
+  {
+    "id": 98,
+    "name": "Wireless Scanner",
+    "category": "Electronics",
+    "price": 299,
+    "description": "Portable wireless scanner",
+    "inStock": true
+  },
+  {
+    "id": 99,
+    "name": "Desk Thermometer",
+    "category": "Office Supplies",
+    "price": 19,
+    "description": "Digital desk thermometer",
+    "inStock": true
+  },
+  {
+    "id": 100,
+    "name": "Monitor Hood",
+    "category": "Electronics",
+    "price": 149,
+    "description": "Monitor glare hood",
+    "inStock": true
+  }
 ]

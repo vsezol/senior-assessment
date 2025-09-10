@@ -1,20 +1,19 @@
-import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import Items from './Items';
-import ItemDetail from './ItemDetail';
-import { DataProvider } from '../state/DataContext';
+import React from "react";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <DataProvider>
-      <nav style={{padding: 16, borderBottom: '1px solid #ddd'}}>
-        <Link to="/">Items</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Items />} />
-        <Route path="/items/:id" element={<ItemDetail />} />
-      </Routes>
-    </DataProvider>
+    <div className="min-h-screen bg-base-200" data-theme="dark">
+      <div className="navbar bg-base-100 shadow-lg">
+        <div className="flex-1">
+          <a className="btn btn-ghost normal-case text-xl">Product Catalog</a>
+        </div>
+      </div>
+
+      <main>
+        <Outlet />
+      </main>
+    </div>
   );
 }
 

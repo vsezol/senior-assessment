@@ -1,62 +1,55 @@
-# Take‑Home Assessment
+# Product Catalog with Virtual Scrolling
 
-Welcome, candidate! This project contains **intentional issues** that mimic real‑world scenarios.
-Your task is to refactor, optimize, and fix these problems.
+Система каталога продуктов с виртуальным списком и инфинитным скроллом.
 
-## Objectives
+## Особенности
 
-### 💻 Frontend (React)
+- **Виртуальный список**: Отображение только видимых элементов для оптимальной производительности
+- **Инфинитный скролл**: Автоматическая догрузка данных при скролле
+- **React Query**: Оптимальное кеширование и управление состоянием данных
+- **Daisy UI**: Современный дизайн с поддержкой тем
+- **Скелетоны**: Плавная загрузка с анимированными заглушками
+- **Аккордеон**: Раскрывающиеся карточки товаров
+- **Поиск**: Серверный поиск с дебаунсом
+- **Статистика**: Отображение общей статистики через API
 
-1. **Memory Leak**  
-   - `Items.js` leaks memory if the component unmounts before fetch completes. Fix it.
+## Установка
 
-2. **Pagination & Search**  
-   - Implement paginated list with server‑side search (`q` param). Contribute to both client and server.
+### Backend
 
-3. **Performance**  
-   - The list can grow large. Integrate **virtualization** (e.g., `react-window`) to keep UI smooth.
-
-4. **UI/UX Polish(optional)**  
-   - Feel free to enhance styling, accessibility, and add loading/skeleton states.
-
-### 🔧 Backend (Node.js)
-
-1. **Refactor blocking I/O**  
-   - `src/routes/items.js` uses `fs.readFileSync`. Replace with non‑blocking async operations.
-
-2. **Performance**  
-   - `GET /api/stats` recalculates stats on every request. Cache results, watch file changes, or introduce a smarter strategy.
-
-
-## ⏰ Time Expectation
-
-- Estimated time to complete: **1–2 hours**.
-
-## 📤 Submission
-
-Once completed, submit one of the following:
-
-- **short video** recording your work.
-- **Github Link** where your assessment result were pushed.
-
----
-
-## Quick Start
-
-node version: 18.XX
 ```bash
-nvm install 18
-nvm use 18
-
-# Terminal 1
 cd backend
 npm install
-npm start
+npm run dev
+```
 
-# Terminal 2
+### Frontend
+
+```bash
 cd frontend
 npm install
 npm start
 ```
 
-> The frontend proxies `/api` requests to `http://localhost:4001`.
+## Технологии
+
+### Backend
+- Node.js
+- Express.js
+- JSON файловая база данных
+
+### Frontend
+- React 18
+- React Query (TanStack Query)
+- React Window (виртуализация)
+- Daisy UI + Tailwind CSS
+- React Router DOM
+
+## API Endpoints
+
+- `GET /api/items` - Получение списка товаров с пагинацией и поиском
+- `GET /api/items/:id` - Получение конкретного товара
+- `GET /api/stats` - Получение статистики
+- `POST /api/items` - Создание нового товара
+
+## Структура проекта
